@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    width: 100%;
+    height: 50px;
+    background: black;
+    margin: 0 auto;
+}
+#nav .main-menu ul{
+	
+    display: none;
+}
+#nav .main-menu li:hover > ul{
+	
+    display: block;
+}
+#nav .main-menu ul .dropdown{
+    background: black;
+    border-bottom: 1px solid #494949;
+}
+#nav .main-menu ul .dropdown:hover{
+    background:  #c3acac;
+    border: none;
+}
+#nav ul li{
+    float: left;
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid #494949;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: "PingFang TC","微軟正黑體",sans-serif;
+}
+#nav ul li a{
+    
+    color: white;
+    text-decoration: none;
+}
+#nav ul li:hover{
+    height: 50px;
+    background: #c3acac;
+    color: black;
+}
+#nav ul .first{
+    border-left: 1px solid #494949;
+}
+
+#nav .search{
+    width: 230px;
+    /*height: 31px*/
+    height: 29px;
+    background: #f1f1f1;
+    float: right;
+    /*margin: 10px 10px 5px 0;*/
+    border: 1px solid gray;
+	position: relative;
+}
+#nav .search .text{
+    /*width: 214px*/
+    width: 188px;
+    height: 29px;
+    border: none;
+    float: left;
+    /*padding-left: 16px;*/
+    font-size: 10px;
+    background: #f1f1f1;
+	position: absolute;
+	top: 0;
+	left: 0;
+    
+}
+#nav .search .bt{
+    /*height: 29px;
+    width: 26px;*/
+	height: 26px;
+    width: 26px;
+    float: right;
+    background: #f1f1f1;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+} 
+
+
+/*#banner{
+    width: 100%;
+    height: 400px;
+	margin: 0 auto;
+	background-size:cover ;
+}
+    /*background: #c7c2bf;
+    background-image:url(img/banner.png);
+    
+}
+#banner img{
+    margin: 0 auto;
+}
+*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  max-height: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+.t {
+ color: #f2f2f2;
+ font-size: 15px;
+ padding: 8px 12px;
+ position: absolute;
+ bottom: 20px; /* 8px*/
+ width: 100%;
+ text-align: center;
+ font-family:cursive;
+  }
+  
+  
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ 
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+  
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+#main{
+    width:100%;
+    height: 1130px;
+    margin: 0 auto;
+    background: #dddbdb;
+}
+#main .left{
+    width: 120px;
+    height: 1130px;
+    float: left;
+    background: #5a5959;
+}
+#main .left ul li{
+    list-style: none;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+}
+#main .left ul li a{
+    color: white;
+    text-decoration: none;
+}
+#main .left ul li:hover{
+    height: 50px;
+    background: #c3acac;
+}
+
+#main .left .main-menu{
+    position:relative;
+}
+#main .left .dropdown{
+    display: none;
+}
+#main .left .dropdown a{
+    width: 120px;
+    height: 50px;
+    background: #5a5959;
+    border-left: 1px solid #494949;
+    display: block;
+    font-size: 17px;
+}
+#main .left .dropdown a:hover{
+    background: #c3acac;
+}
+#main .left .main-menu:hover .dropdown{
+    position:absolute;
+    z-index:1;
+    display: block;
+    left:120px;
+    top:0px;
+}
+
+#main .content{
+    width: 1100px;
+    height: 264px;
+    margin-left: 150px;
+    background: #dddbdb;
+}
+#main .content .smallbox{
+    width: 300px;
+    height: 204px;
+    float: left;
+    background: lightgray;
+    margin: 30px 40px 30px 30px;
+}
+#main .content .smallbox a{
+    width: 210px;
+    height: 69px;
+    line-height: 65px;
+    text-align: center;
+    font-size:30px ;
+    color: green;
+    text-decoration: none;
+    display: block;
+}
+
+.car{
+    width:35px;
+    height:24px;
+}

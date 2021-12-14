@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+ 
+   #nav {
+    width: 100%;
+    height: 50px;
+    background: black;
+    margin: 0 auto;
+   }
+ 
+   #nav .main-menu ul {
+    display: none;
+   }
+ 
+   #nav .main-menu li:hover>ul {
+    display: block;
+   }
+ 
+   #nav .main-menu ul .dropdown {
+    background: black;
+    border-bottom: 1px solid #494949;
+   }
+ 
+   #nav ul li {
+    float: left;
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid #494949;
+    line-height: 50px;
+    font-size: 15px;
+   }
+ 
+   #nav ul li a {
+    color: white;
+    text-decoration: none;
+   }
+ 
+   #nav ul li:hover {
+    height: 50px;
+    background: #c3acac;
+    color: black;
+   }
+ 
+   #nav ul .first {
+    border-left: 1px solid #494949;
+   }
+ 
+   #nav .search {
+    width: 230px;
+    /*height: 31px*/
+    ;
+    height: 29px;
+    background: #f1f1f1;
+    float: right;
+    margin: 10px 10px 10px 0;
+    border: 1px solid gray;
+   }
+ 
+   #nav .search .text {
+    /*width: 214px*/
+    width: 188px;
+    height: 29px;
+    border: none;
+    float: left;
+    padding-left: 16px;
+    font-size: 10px;
+    background: #f1f1f1;
+ 
+   }
+ 
+   #nav .search .bt {
+    height: 29px;
+    width: 26px;
+    float: left;
+    background: #f1f1f1;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+   }
+ 
+ 
+ 
+ 
+   #main {
+    width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+    background: #dddbdb;
+   }
+ 
+   #main .left {
+    width: 120px;
+    height: 2000px;
+    float: left;
+    background: #5a5959;
+   }
+ 
+   #main .left ul li {
+    list-style: none;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+   }
+ 
+   #main .left ul li a {
+    color: white;
+    text-decoration: none;
+   }
+ 
+   #main .content {
+    width: 1100px;
+    height: 1000px;
+    padding-top: 20px;
+    margin-left: 150px;
+   }
+ 
+   #main .content .smallbox {
+    width: 1000px;
+    height: 80px;
+    border-bottom: 1px solid #8b8b8b;
+   }
+ 
+   #main .content .smallbox p {
+    display: block;
+    height: 25px;
+ 
+    font-size: 25px;
+    float: right;
+    text-align: center;
+   }
+ 
+   #main .content .title {
+    display: inline-block;
+    width: 1000px;
+    height: 60px;
+    font-size: 25px;
+ 
+    border-bottom: 1px solid #8b8b8b;
+   }
+ 
+   #main .content .smallbox a {
+    display: inline-block;
+    height: 80px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+   }
+ 
+   .imgclick {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+   }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			#nav{
+				width: 100%;
+				height: 50px;
+				background: black;
+				margin: 0 auto;
+			}
+			#nav .main-menu ul{
+				display: none;
+			}
+			#nav .main-menu li:hover > ul{
+				display: block;
+			}
+			#nav .main-menu ul .dropdown{
+				background: black;
+				border-bottom: 1px solid #494949;
+			}
+			#nav .main-menu ul .dropdown:hover{
+				background:  #c3acac;
+				border: none;
+			}
+			#nav ul li{
+				float: left;
+				list-style: none;
+				width: 100px;
+				height: 50px;
+				text-align: center;
+				border-right: 1px solid #494949;
+				line-height: 50px;
+				font-size: 15px;
+				font-family: "PingFang TC","微軟正黑體",sans-serif;
+			}
+			#nav ul li a{
+				
+				color: white;
+				text-decoration: none;
+			}
+			#nav ul li:hover{
+				height: 50px;
+				background: #c3acac;
+				color: black;
+			}
+			#nav ul .first{
+				border-left: 1px solid #494949;
+			}
+			
+			#nav .search{
+				width: 230px;
+				/*height: 31px*/;
+				height: 29px;
+				background: #f1f1f1;
+				float: right;
+				margin: 10px 10px 10px 0;
+				border: 1px solid gray;
+			}
+			#nav .search .text{
+				/*width: 214px*/;
+				width: 188px;
+				height: 29px;
+				border: none;
+				float: left;
+				padding-left: 16px;
+				font-size: 10px;
+				background: #f1f1f1;
+				
+			}
+			#nav .search .bt{
+				height: 29px;
+				width: 26px;
+				float: left;
+				background: #f1f1f1;
+				background-image: url(img/search.png);
+				background-repeat: no-repeat;
+				background-position: left center;
+				border: none;
+			} 
+			
+			#main{
+				width:100%;
+				height: 600px;
+				margin: 0 auto;
+			}
+			#main .up{
+				width: 100%;
+				height: 200px;
+				margin: 0 auto;
+				background: #747578;
+			}
+			#main .up h3{
+				font-size: 30px;
+				color: white;
+				padding-left: 150px;
+				padding-top: 75px;
+			}
+			#main .down{
+				width: 100%;
+				height: 400px;
+				margin: 0 auto;
+				background: #e6e7eb;
+			}
+			#main .down .pic{
+				width: 150px;
+				height: 150px;
+				background-image: url(img/love.png);
+				background-size: 150px 150px;
+				background-repeat: no-repeat;
+				margin: 0 auto;
+			}
+			#main .down p{
+				font-size: 25px;
+				padding-left: 500px;
+				display: inline-block;
+			}
+			#main .down input{
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!--1.導航-->
+		<div id="nav">
+			<ul class="main-menu">
+				<li class="first"><a href="#">登入</a></li>
+				<li><a href="#">介紹</a></li>
+				<li><a href="我的最愛.html">我的最愛</a></li>
+				<li><a href="#">排序方式</a>
+					<ul>
+						<li class="dropdown"><a href="#">由新到舊</a></li>
+						<li class="dropdown"><a href="#">購買數多到少</a></li>
+					</ul>
+				</li>
+				<li><a href="#">論壇</a></li>
+				<li><a href="index01.html">回首頁</a></li>
+			</ul>
+			
+			<div class="search">
+				<form>
+					<input type="text" placeholder="SEARCH" class="text" />
+					<input type="submit" value="" class="bt"/>
+				</form>	
+			</div>
+		</div>
+		
+		<div id="main">
+			<div class="up">
+				<h3>我的課程</h3>
+			</div>
+			
+			<div class="down">
+				<div class="pic"></div>
+				<p>目前沒有收藏的課程</p>
+				<br />
+				<input type="button" value="立即瀏覽課程"
+				onClick= "window.open('index.html')"
+				style="width: 120px; height: 50px; 
+					background: orangered; color: white;
+					margin-left: 550px;" />
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

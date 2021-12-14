@@ -1,0 +1,65 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Log in</title>
+    </head>
+   
+    <center>
+
+ {% for message in get_flashed_messages() %}
+
+ <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+        <div>
+          {{message}}
+        </div>
+      </div>
+      {% if message == "Login Successfully!" %}
+       <h2>Hello {{ account }}!!</h2>
+       <a href="{{url_for('index2')}}" class="btn btn-outline-secondary">Start Now!!</a>
+      {% endif %}
+ {% endfor %}
+            <br/><br/>
+    <h2 style="color:gray">Welcome to GENESIS</h2>
+    
+
+ {% if login==1 %}
+
+        <h2>Hello {{ account }}!!</h2>
+        <a href="{{url_for('index2')}}" class="btn btn-outline-secondary">Start Now!!</a>
+
+    {% else %}
+        <h3 style="color:gray">Please Enter Your Account!</h3>
+            <br/>
+            <div class="shadow p-3 mb-5 bg-body rounded">
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                {{ form.account.label(class="form-label") }}
+                {{ form.account(class="form-control",placeholder="Your account") }}
+            </br>
+                {{ form.password.label(class="form-label") }}
+                {{ form.password(class="form-control",placeholder="Your password") }}
+            </br>
+               
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                  <br/>
+                {{ form.submit1(class="btn btn-outline-secondary") }}
+                <!--{{ form.submit(class="btn btn-outline-secondary" ) }}-->
+                <a href="{{url_for('signup')}}" class="btn btn-outline-secondary">Sign Up</a>
+        </form>
+    </div>
+        {% endif %}
+</center>
+
+</html>
+{% endblock %}

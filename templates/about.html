@@ -1,0 +1,41 @@
+{% include 'base.html' %}
+
+{% block content %}
+<style>
+
+.first_about{
+    color:burlywood;
+    font-family:cursive,Microsoft JhengHei;
+}
+
+.second_about{
+    font-family:Microsoft JhengHei;
+}
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>About us</title>
+    </head>
+    <center>
+        <br/>
+<h3 class="first_about"><p>GENISIS為您打造輕鬆選擇與比較書籍價格的天地</p>
+    <p>喜歡看書的你絕對不能錯過</p>
+</h3>
+ <h2 class="second_about">廠商合作資訊如下</h2>
+ <img src="{{url_for('static',filename='img/about.png')}}"。
+</center>
+
+</html>
+
+
+
+
+
+
+{% endblock %}

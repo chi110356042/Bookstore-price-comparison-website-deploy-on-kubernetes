@@ -1,0 +1,122 @@
+{% include 'base.html' %}
+
+{% block content %}
+<style>
+
+.two{
+    position: absolute;
+    top: 97px;
+    right:550;
+
+}
+
+.three{
+    position: absolute;
+    top: 97px;
+    right:60;
+ 
+
+}
+</style>
+
+<h3>關於English...</h3>
+<div>
+        <div class="card" style="width:18rem;  height:25rem;">
+            <img src="{{url_for('static',filename='img/english1.png')}}" class="card-img-top" height="200px" >
+            <div class="card-body">
+              <h4 class="card-title">	
+                    Read & Think English</h4>
+              <p class="card-text">誠品 / NT 685</p>
+              <a href="https://www.eslite.com/product/1001294883030777" class="btn btn-outline-secondary">Go To See </a>
+            </div>
+          </div>
+          <br/>  <br/>  
+        
+          <div class="card" style="width:18rem;  height:25rem;"  >
+            <img src="{{url_for('static',filename='img/english2.png')}}" class="card-img-top" height="200px">
+            <div class="card-body">
+                <h4 class="card-title">New English Hymnal Words Edition</h4>
+                <p class="card-text">誠品 / NT 685</p>
+                <a href="https://www.eslite.com/product/1001294884044013" class="btn btn-outline-secondary">Go To See</a>
+            </div>
+          </div>
+          <br/>  <br/>  
+        
+          <div class="card" style="width:18rem;  height:25rem;">
+            <img src="{{url_for('static',filename='img/english3.png')}}" class="card-img-top" height="200px">
+            <div class="card-body">
+                <h4 class="card-title">
+                        English</h4>
+                <p class="card-text">博客來 / NT 348</p>
+                <a href="https://www.books.com.tw/products/F017328216?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+            </div>
+          </div>
+          <br/>  <br/> 
+        </div>
+        
+        <div class="two">
+            <div class="card" style="width:18rem;  height:25rem;">
+                <img src="{{url_for('static',filename='img/english4.png')}}" class="card-img-top" height="200px">
+                <div class="card-body">
+                    <h4 class="card-title">申入剖熙-英文文法-實力養成系列(一品)</h4>
+                    <p class="card-text">博客來 / NT 277</p>
+                    <a href="https://www.books.com.tw/products/0010905611?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                </div>
+            </div>
+                <br/>  <br/>  
+        
+                <div class="card" style="width:18rem;  height:25rem;">
+                    <img src="{{url_for('static',filename='img/english5.png')}}" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h4 class="card-title">雅思口說教戰手冊：從流利度與連貫性、字彙、文法到發音</h4>
+                        <p class="card-text" >博客來  / NT 356 </p>
+                        <a href="https://www.books.com.tw/products/0010902829?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                    </div>
+                </div>
+                    <br/>  <br/>  
+        
+                    <div class="card" style="width:18rem;  height:25rem;">
+                        <img src="{{url_for('static',filename='img/english6.png')}}" class="card-img-top" height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">一次搞懂！必備的英文文法：68天╳72堂基礎文法╳1340道實戰題型</h4>
+                            <p class="card-text">博客來 / NT 711</p>
+                            <a href="#" class="btn btn-outline-secondary">Go To See</a>
+                        </div>
+                    </div>
+        
+        </div>
+        
+        <div class="three">
+            <div class="card" style="width:18rem;  height:25rem;">
+                <img src="{{url_for('static',filename='img/english7.png')}}" class="card-img-top" height="200px">
+                <div class="card-body">
+                    <h4 class="card-title">	
+                            一翻就懂，99%的人都能使用的英文自學寶典</h4>
+                    <p class="card-text">博客來 / NT 285</p>
+                    <a href="https://www.books.com.tw/products/0010888648?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                </div>
+            </div>
+                <br/>  <br/>  
+        
+                <div class="card" style="width:18rem;  height:25rem;">
+                    <img src="{{url_for('static',filename='img/english8.png')}}" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h4 class="card-title">English Vocabulary Builder 2</h4>
+                        <p class="card-text">金石堂 / NT 363</p>
+                        <a href="https://www.kingstone.com.tw/basic/203c211204545?zone=english&lid=search&actid=WISE&kw=english&pi=0" class="btn btn-outline-secondary">Go To See</a>
+                    </div>
+                </div>
+                    <br/>  <br/>  
+        
+                    <div class="card" style="width:18rem;  height:25rem;">
+                        <img src="{{url_for('static',filename='img/english9.png')}}" class="card-img-top" height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">The Pronunciation of English</h4>
+                            <p class="card-text">金石堂 / NT 753</p>
+                            <a href="https://www.kingstone.com.tw/basic/203c211680763?zone=english&lid=search&actid=WISE&kw=english&pi=0" class="btn btn-outline-secondary">Go To See</a>
+                        </div>
+                    </div>
+        
+        </div>
+  
+{% endblock %}

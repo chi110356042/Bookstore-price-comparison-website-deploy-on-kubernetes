@@ -1,0 +1,32 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+<img src="{{url_for('static',filename='img/banner.png')}}" class="img-fluid" width="91%" >
+
+    <!--第一排-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{url_for('static',filename='img/java.PNG')}}" class="rounded float-start" width="360" href="{{url_for('python')}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <img src="{{url_for('static',filename='img/python.PNG')}}" class="img-thumbnail" width="360"  href="{{url_for('python')}}">
+       <img src="{{url_for('static',filename='img/攝影.PNG')}}" class="rounded float-end" width="360" >
+       <br/> <br/>
+    <!--第二排-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{url_for('static',filename='img/Excel.PNG')}}" class="rounded float-start" width="360" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="{{url_for('static',filename='img/N3.PNG')}}" class="img-thumbnail" width="360"  href="badpython.php?q=python">
+        <img src="{{url_for('static',filename='img/英文.PNG')}}" class="rounded float-end" width="360" >
+        <br/> <br/>
+    <!--第三排-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{url_for('static',filename='img/財管.PNG')}}" class="rounded float-start" width="360" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="{{url_for('static',filename='img/記憶.PNG')}}" class="img-thumbnail" width="360"  href="badpython.php?q=python">
+        <img src="{{url_for('static',filename='img/房地產.PNG')}}" class="rounded float-end" width="360" >
+       <br/> <br/>
+  
+         <div id="recbottom" class="recmodal">
+          <span onclick="document.getElementById('recbottom').style.display='none'" class="recclose"
+        title="Close Modal">&times;</span>
+          <p class="func1">註冊成為GENESIS會員享更多 &nbsp;!</p>
+          <p class="func2">成為會員即可擁有購物車、定時優惠、推文通知等功能(點擊左上角登入)</p>
+          
+          </div>
+    </div>
+
+{% endblock %}

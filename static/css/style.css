@@ -1,0 +1,443 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content{
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.line1{
+    position:absolute;
+    left:500px;  
+    top:350px;
+    width:300px; 
+    height: 2px;
+    border-top: solid #ACC0D8 1px;
+           
+       }
+ .tatze{
+           position: absolute;
+           height:100px;
+           width:300px;
+           left:500px;
+           font-size: 25pt;
+           color:#5599FF;
+           font-family:cursive;
+           font-weight: bolder;
+           text-align: center;
+           margin: auto;
+       }
+    .login{
+        position: absolute;
+        width:100px; 
+        height:30px;
+        top:370px;
+        left:530px;
+        border-radius:5px;
+        background-color:#5AAC44;
+        border-style:none;
+        color:white;
+        font-weight: bolder;
+        font-size: 10pt;
+        text-align: center;
+    }
+    .sign{
+      position: absolute;
+      width:100px; 
+      height:30px;
+      top:370px;
+      left:650px;
+      border-radius:5px;
+      background-color:#5AAC44;
+      border-style:none;
+        color:white;
+        font-weight: bolder;
+        font-size: 10pt;
+        text-align: center;
+    }
+    .mail{
+      position: absolute;
+  
+      top:200px;
+      left:500px;
+      width:300px; 
+    height:40px;
+    border-radius:5px;
+    background-color:#FAFAFA;
+    border-color:#D9D9D9;
+    border-style:solid;
+    
+    }
+    .password{
+      position: absolute;
+  
+      top:270px;
+      left:500px;
+      width:300px; 
+    height:40px;
+    border-radius:5px;
+    background-color:#FAFAFA;
+    border-color:#D9D9D9;
+    border-style:solid;
+    }
+    .registerAccount{
+      position: absolute;
+      
+    
+      top:430px;
+      left:570px;
+      text-decoration:none;
+      color:rgb(0,82,204);
+      font-size:10pt; 
+      font-family:-apple-system;
+    }
+    .mailpng{
+      position: absolute;
+      width:20px;
+       height:18px;
+       top:210px;
+       left:470px;
+    }
+    .keypng{
+      position: absolute;
+      width:20px;
+       height:20px;
+       top:285px;
+       left:470px;
+    }
+	.eye{
+      position: absolute;
+      top:285px;
+      left:760px;
+      width:30px;
+      height:15px;
+	  background-image :url(img/eye.png);
+	  background-repeat :no-repeat;
+	  background-size :30px 15px
+    }
+	
+    #myBtn{
+		background-color:black;
+		color:white;
+    }
+    .signup{
+      padding: 14px 20px;
+      background-color: #5AAC44;
+      float: left;
+      width: 50%;
+    }
+    .cancelbtn{
+      padding: 14px 20px;
+      background-color: #5AAC44;
+      float: left;
+      width: 50%;
+    }
+    #message {
+      display:none;
+      background: #f1f1f1;
+      color: #000;
+      position: absolute;
+      left:700px;
+      top:280px
+    }
+    
+    #message p {
+      padding: 10px 35px;
+      font-size: 12px;
+    }
+    
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid {
+      color: green;
+    }
+    
+    .valid:before {
+      position: relative;
+      left: -35px;
+      content: "✔️";
+    }
+    
+    /* Add a red text color and an "x" when the requirements are wrong */
+    .invalid {
+      color: red;
+    }
+    
+    .invalid:before {
+      position: relative;
+      left: -35px;
+      content: "✖️";
+    }
+    #message2 {
+      display:none;
+      background: #f1f1f1;
+      color: #000;
+      position: absolute;
+      left:610px;
+      top:310px
+    }
+    
+    #message2 p {
+      padding: 10px 35px;
+      font-size: 12px;
+    }
+    
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid2 {
+      color: green;
+    }
+    
+    .valid2:before {
+      position: relative;
+      left: -35px;
+      content: "✔️";
+    }
+    
+    /* Add a red text color and an "x" when the requirements are wrong */
+    .invalid2 {
+      color: red;
+    }
+    
+    .invalid2:before {
+      position: relative;
+      left: -35px;
+      content: "✖️";
+    }
+
+
+
+    #nav{
+        width: 100%;
+        height: 50px;
+        background-color: #f8f8f8;
+        position: relative;
+    }
+    
+    #nav #title{
+        width: 150px;
+        height: 45px;
+        float: left;
+        /*background-color: #FFC0CB;*/
+        font-size: 30px;
+        line-height: 45px;
+        padding-left: 30px;
+    }
+    #nav #title a{
+        text-decoration: none;
+        color: #5a5959;
+    }
+    
+    #search{
+        width: 400px;
+        height: 40px;
+        margin: auto;
+        background-color: #d5d5d5;
+        /*background-color: #f1f1f1;*/
+        position: absolute;
+        top: 5px;
+        left: 350px;
+        float: left;
+    }
+    #search .schtext{
+        width: 350px;
+        height: 35px;
+        float: left;
+        border: none;
+        padding-left: 10px;
+        background-color: #d5d5d5;
+        /*background-color: white;*/
+    }
+    #search .bt{
+        height: 38px;
+        width: 38px;
+        float: right;
+        background-color: #d5d5d5;
+        /*background: #f1f1f1;*/
+        background-image: url(img/searchbt.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        border: none;
+    } 
+    
+    #nav .mem{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 7px;
+        right: 20px;
+    }
+    #nav .favo{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 12px;
+        right: 70px;
+    }
+    
+    #nav .sort{
+        text-decoration: none;
+        color: #808080;
+        font-size: 15px;
+    }
+    
+    #nav .box{
+        z-index:1;
+        width: 105px;
+        height: 155px;
+        /*border: 1px solid black;*/
+        position:absolute;
+        left: 180px;
+    }
+    
+    #nav .box .main-menu{
+        width: 100px;
+        height: 50px;
+        display: block;
+        /*background-color: #D5D5D5;*/
+        
+        text-align: center;
+        line-height: 45px;
+    }
+    #nav .dropdownbox{
+        display: none;
+    }
+    #nav .dropdownbox a{
+            width: 100px;
+            height: 50px;
+            background: #D5D5D5;
+            border-bottom: 1px solid gainsboro;
+            display: block;
+            font-size: 15px;
+            line-height: 50px;
+            color:#808080;
+            text-decoration: none;
+            text-align: center;
+    }
+    #nav .dropdownbox a:hover{
+        background: #c3acac;
+    }
+    #nav .box:hover .dropdownbox{
+        z-index:1;
+        display: block;
+            
+    }
+    
+    #nav .about{
+        width: 90px;
+        height: 15px;
+        text-decoration: none;
+        color: #808080;
+        font-size: 15px;
+        line-height: 15px;
+        position: absolute;
+        top: 17px;
+        right: 200px;
+        
+        /*background-color: #FFC0CB;*/
+        
+    }
+    #nav .todo{
+        width: 90px;
+        height: 15px;
+        text-decoration: none;
+        color: #808080;
+        font-size: 15px;
+        line-height: 15px;
+        position: absolute;
+        top: 17px;
+        right: 150px;
+        /*background-color: #FFC0CB;*/
+        
+    }
+    
+    #main #recbottom{
+        width: 100%;
+        height: 140px;
+        background-color: black;
+        opacity:0.8;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    #main #recbottom .func1{
+        display: block;
+        width: 500px;
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    #main #recbottom .func2{
+        display: block;
+        width: 500px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    #main .but{
+        display: block;
+        width: 100px;
+        height: 40px;
+        background-color: gainsboro;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        line-height: 40px;
+        opacity:1;
+        margin: 0 auto;
+    
+    }
+    
+    
+    /* The Close Button (x) */
+    .recclose {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+    
+    .recclose:hover,
+    .recclose:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
