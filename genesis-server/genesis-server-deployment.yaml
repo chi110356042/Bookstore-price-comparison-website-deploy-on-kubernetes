@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: genesis-server
+  name: genesis-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: genesis-server
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: genesis-server
+    spec:
+      containers:
+        - image: genesis-server
+          name: genesis-server
+          ports:
+            - containerPort: 5000
+          resources: {}
+          volumeMounts:
+            - mountPath: /app
+              name: genesis-server-claim0
+      restartPolicy: Always
+      volumes:
+        - name: genesis-server-claim0
+          persistentVolumeClaim:
+            claimName: genesis-server-claim0
+status: {}

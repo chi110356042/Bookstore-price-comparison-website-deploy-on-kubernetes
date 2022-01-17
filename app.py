@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask import render_template ,flash
 from flask import request,redirect
 from flask_wtf import FlaskForm
-from wtforms import StringField,SubmitField,PasswordField
+from wtforms import StringField,SubmitField,PasswordField,validators
 from wtforms.validators import DataRequired
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -39,8 +39,8 @@ class Users(db.Model):
         return '<Name %r>' % self.name
 
 class UserForm(FlaskForm):
-    account=StringField("Account:",validators=[DataRequired()])
-    password=StringField("Password:",validators=[DataRequired()])
+    account=StringField("Account:",validators=[DataRequired(),validators.Length(3, 20)])
+    password=StringField("Password:",validators=[DataRequired(),validators.Length(8, 20)])
     email=StringField("Email:",validators=[DataRequired()])
     submit=SubmitField("submit")
 
@@ -145,7 +145,7 @@ def signup():
 def index():
     return  render_template('index.html')
 
-@app.route("/index2",methods=['GET','POST'])
+@app.route("/index2/",methods=['GET','POST'])
 #@login_required
 def index2():
     form=UserForm()
@@ -178,6 +178,10 @@ def car():
     return  render_template('/car.html')
 
 
+@app.route("/coupon")
+def coupon():
+    return  render_template('/coupon.html')
+
 
 #search page
 @app.route("/python")
@@ -187,6 +191,14 @@ def python():
 @app.route("/python2")
 def python2():
     return  render_template('python2.html')
+
+@app.route("/pythondollar")
+def pythondollar():
+    return  render_template('pythondollar.html')
+
+@app.route("/pythontime")
+def pythontime():
+    return  render_template('pythontime.html')
 
 @app.route("/java")
 def java():

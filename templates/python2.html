@@ -24,7 +24,16 @@
 }
 </style>
 
-<h3>關於Python...</h3>
+<h3> <div class="custom-select">
+        <Select name="formal" onchange="handleSelect(this)"> 
+                <OPTION selected>關於PYTHON...</OPTION> 
+                <OPTION value="pythondollar">價錢</OPTION> 
+                <OPTION value="pythontime">時間</OPTION> 
+                <OPTION value="pythonshop">商城</OPTION> 
+                </Select> 
+  </div>
+  
+  </h3>
 <div>
         <div class="card" style="width:18rem;  height:25rem;">
             <img src="{{url_for('static',filename='img/python1.png')}}" class="card-img-top" height="200px" >
@@ -149,5 +158,17 @@
             }
             alert("已加入"+item+"至購物車");
             }
+            function mbar(sobj) { 
+                var docurl =sobj.options[sobj.selectedIndex].value; 
+                if (docurl != "") { 
+                open(docurl,'_blank'); 
+                sobj.selectedIndex=0; 
+                sobj.blur(); 
+                } 
+              } 
+              function handleSelect(elm)
+                    {
+                    window.location = "http://0.0.0.0:5000/"+elm.value;
+                    }
         </script>
 {% endblock %}

@@ -1,0 +1,180 @@
+{% include 'base2.html' %}
+
+{% block content %}
+
+
+<style>
+
+        .two{
+            position: absolute;
+            top: 97px;
+            right:550;
+        
+        }
+        
+        .three{
+            position: absolute;
+            top: 97px;
+            right:60;
+         
+        
+        }
+        
+        .car{
+            width:35px;
+            height:24px;
+        }
+        
+        </style>
+
+<h3> <div class="custom-select">
+        <Select name="formal" onchange="handleSelect(this)"> 
+                <OPTION selected>關於PYTHON...</OPTION> 
+                <OPTION value="pythondollar">價錢</OPTION> 
+                <OPTION value="pythontime">時間</OPTION> 
+                <OPTION value="pythonshop">商城</OPTION> 
+                </Select> 
+  </div>
+  
+  </h3>
+<div>
+        <div class="card" style="width:18rem;  height:25rem;">
+                <img src="{{url_for('static',filename='img/python8.png')}}" class="card-img-top" height="200px">
+                <div class="card-body">
+                    <h4 class="card-title">Python零基礎入門班：打好程式設計、運算思維與邏輯訓練基本功
+                        </h4>
+                    <p class="card-text">博客來 / NT 308</p>
+                    <a href="https://www.books.com.tw/products/0010891947?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                    <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Python零基礎入門班：打好程式設計、運算思維與邏輯訓練基本功')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                </div>
+            </div>
+            <br/>  <br/>  
+
+            <div class="card" style="width:18rem;  height:25rem;"  >
+                    <img src="{{url_for('static',filename='img/python2.png')}}" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h4 class="card-title">Python × APCS解題思路</h4>
+                        <p class="card-text">金石堂 / NT 420</p>
+                        <a href="https://www.eslite.com/product/1001294883034189" class="btn btn-outline-secondary">Go To See</a>
+                        <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Python × APCS解題思路')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                    </div>
+                  </div>
+                  <br/>  <br/>  
+
+                  <div class="card" style="width:18rem;  height:25rem;">
+                        <img src="{{url_for('static',filename='img/python1.png')}}" class="card-img-top" height="200px" >
+                        <div class="card-body">
+                          <h4 class="card-title">	
+                                Introduction Coding Python</h4>
+                          <p class="card-text">金石堂 / NT 689</p>
+                          <a href="https://www.kingstone.com.tw/basic/203c211164058?zone=english&lid=search&actid=WISE&kw=python&pi=0" class="btn btn-outline-secondary">Go To See </a>
+                          <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Introduction Coding Python')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                        </div>
+                      </div>
+
+        
+        </div>
+        
+        <div class="two">
+                <div class="card" style="width:18rem;  height:25rem;">
+                        <img src="{{url_for('static',filename='img/python3.png')}}" class="card-img-top" height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">	
+                                    Python</h4>
+                            <p class="card-text">博客來 / NT320</p>
+                            <a href="https://www.books.com.tw/products/F013609706?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                            <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Python')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                        </div>
+                      </div>
+                      <br/>  <br/> 
+
+                      <div class="card" style="width:18rem;  height:25rem;">
+                            <img src="{{url_for('static',filename='img/python6.png')}}" class="card-img-top" height="200px">
+                            <div class="card-body">
+                                <h4 class="card-title">	
+                                        Learning Python: Crash Course Tutorial</h4>
+                                <p class="card-text">誠品 / NT 570</p>
+                                <a href="#" class="btn btn-outline-secondary">Go To See</a>
+                                <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Learning Python: Crash Course Tutorial')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                            </div>
+                        </div>
+                            <br/>  <br/>  
+
+                            
+                                    <div class="card" style="width:18rem;  height:25rem;">
+                                        <img src="{{url_for('static',filename='img/python4.png')}}" class="card-img-top" height="200px">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Python自學聖經(第二版)：從程式素人到開發強者的技術與實戰大全</h4>
+                                            <p class="card-text">博客來 / NT 695</p>
+                                            <a href="https://www.books.com.tw/products/0010906039?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                                            <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Python自學聖經(第二版)：從程式素人到開發強者的技術與實戰大全')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                                        </div>
+                                    </div>
+                    
+        
+        </div>
+        
+        <div class="three">
+            <div class="card" style="width:18rem;  height:25rem;">
+                        <img src="{{url_for('static',filename='img/python9.png')}}" class="card-img-top" height="200px">
+                        <div class="card-body">
+                            <h4 class="card-title">用Python學程式設計運算思維</h4>
+                            <p class="card-text">誠品 / NT 378</p>
+                            <a href="https://www.eslite.com/product/1001113692690584" class="btn btn-outline-secondary">Go To See</a>
+                            <button type="button" class="btn btn-outline-secondary" onclick="addToCar('用Python學程式設計運算思維')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                        </div>
+                    </div>
+                    <br/>  <br/> 
+
+                    <div class="card" style="width:18rem;  height:25rem;">
+                            <img src="{{url_for('static',filename='img/python5.png')}}" class="card-img-top" height="200px">
+                            <div class="card-body">
+                                <h4 class="card-title">Python資料分析必備套件!Pandas資料清理、重塑、過濾、視覺化</h4>
+                                <p class="card-text" >博客來  / NT 616 </p>
+                                <a href="https://www.books.com.tw/products/0010908742?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                                <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Python資料分析必備套件!Pandas資料清理、重塑、過濾、視覺化')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                            </div>
+                        </div>
+                            <br/>  <br/> 
+                            
+                            <div class="card" style="width:18rem;  height:25rem;">
+                                    <img src="{{url_for('static',filename='img/python10.png')}}" class="card-img-top" height="200px">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Python最強入門邁向頂尖高手之路：王者歸來(第二版)全彩版</h4>
+                                        <p class="card-text">博客來 / NT 853</p>
+                                        <a href="https://www.books.com.tw/products/0010869590?sloc=main" class="btn btn-outline-secondary">Go To See</a>
+                                        <button type="button" class="btn btn-outline-secondary" onclick="addToCar('Python最強入門邁向頂尖高手之路：王者歸來(第二版)全彩版')"><img src="{{url_for('static',filename='img/car2.png')}}" class="car"></button>
+                                    </div>
+                                </div>
+
+
+        
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+   
+        <script>          
+            function addToCar(item){
+            //item為品項名稱，型態為字串
+            if(Cookies.get("carItem") == undefined){
+                        //若目前沒有 carItem 這個 key 的 Cookie ，直接新增一個，並只對購物車頁面設定 Cookie
+                Cookies.set("carItem", item, { path: '/shopcar' })
+            }
+            else{
+                //有的話就用逗號將品項做分隔再加入至 carItem 中
+                currentItem = Cookies.get("carItem");
+                currentItem = currentItem+","+item; 
+                Cookies.set("carItem", currentItem, { path: '/shopcar' });
+            }
+            alert("已加入"+item+"至購物車");
+            }
+           
+              function handleSelect(elm)
+                    {
+                    window.location = "http://0.0.0.0:5000/"+elm.value;
+                    }
+        </script>
+
+
+
+
+{% endblock %}

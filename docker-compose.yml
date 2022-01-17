@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  backend:
-    build:
+  genesis-server:
+    build: 
       context: .
       dockerfile: Dockerfile
     ports:
@@ -9,16 +9,16 @@ services:
     volumes:
       - .:/app
     depends_on:
-      - db
+      - genesis-db
 
 
-  db:
+  genesis-db:
     image: mysql:5.7.22
     restart: always
     environment:
       MYSQL_DATABASE: k8s-project
       MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      #MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - .dbdata:/var/lib/mysql

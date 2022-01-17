@@ -1,0 +1,14 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler #水平擴展
+metadata:
+  name: genesis-server
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: genesis-server
+  minReplicas: 1
+  maxReplicas: 50
+  targetCPUUtilizationPercentage: 10
+  # 目標pod的cpu使用率10%
+  
